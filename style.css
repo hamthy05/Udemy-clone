@@ -57,11 +57,11 @@ body {
   cursor: pointer;
 }
 
-.mylearning:hover .mylearning__popup{
+.mylearning:hover .mylearning__popup {
   display: block;
 }
 
-.mylearning__popup{
+.mylearning__popup {
   position: absolute;
   background-color: white;
   border: solid black 1px;
@@ -84,6 +84,15 @@ body {
   color: white;
   padding: 10px;
   border-radius: 35px;
+  cursor: pointer;
+  border: solid #a435f0 1px;
+}
+
+.categories p:hover {
+  transition: 2s;
+  background-color: transparent;
+  color: black;
+  border: solid #a435f0 1px;
 }
 
 .sale-image {
@@ -102,6 +111,21 @@ body {
   position: absolute;
   top: 25%;
   left: 5%;
+  animation-name: z1;
+  animation-duration: 2s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes z1 {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .recomended {
